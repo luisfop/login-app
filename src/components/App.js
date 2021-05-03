@@ -1,9 +1,12 @@
+import Signup from "./Signup";
+
+import { Container } from "react-bootstrap";
 
 function App() {
   return (
-    <div>
-      <h1>HELLO WORLD!</h1>
-    </div>
+    <Container>
+      <Signup />
+    </Container>
   );
 }
 
