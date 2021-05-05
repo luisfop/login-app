@@ -16,7 +16,7 @@ git clone:
 https://github.com/luisfop/login-app/tree/master
 ```
 
-Open the Stefanini folder:
+Open the Login-App folder:
 
 ```
 cd login-app/
