@@ -2,12 +2,19 @@ import React,{useRef} from "react";
 
 import { Form, Button, Card } from "react-bootstrap";
 
+import { useAuth } from "../context/AuthContext";
+
 const Signup = () => {
     const emailRef = useRef();
     const passwordRef = useRef();
     const passwordConfirmRef = useRef();
 
+    const {signUp} = useAuth();
+
+    console.log('useAuth', useAuth());
+
   return (
+
     <>
       <Card>
         <Card.Body>
@@ -33,6 +40,7 @@ const Signup = () => {
         Already have an account? Log in
       </div>
     </>
+
   );
 };
 
