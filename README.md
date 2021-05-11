@@ -2,7 +2,7 @@
 
 Hi! 
 This project is for study purposes. The goal was to create an App to handle login with an authentication.
-I used FireBase React Boostrap for styling , and ReactJs framework.
+I used FireBase to store the users, React Boostrap for styling , and ReactJs framework.
 
 
 # How to run
