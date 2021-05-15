@@ -10,13 +10,13 @@ const Signup = () => {
     const passwordRef = useRef();
     const passwordConfirmRef = useRef();
 
+
     const [ error, setError ] = useState('');
     const [ loading, setLoading ] = useState(false);
 
 
     const {signUp} = useAuth();
 
-    
 
     async function handleSubmit(e){
         e.preventDefault();
@@ -28,8 +28,8 @@ const Signup = () => {
         try{
             setError('');
             await signUp(emailRef.current.value, passwordRef.current.value);
+            alert('Account Created!')
         }catch(error){
-            console.log('Error signing up!', error)
             setError('Failed to create an account! ');
             setLoading(true)
         }
@@ -39,9 +39,7 @@ const Signup = () => {
 
     }
 
-
   return (
-
     <>
       <Card>
         <Card.Body>
