@@ -1,5 +1,6 @@
 import Signup from "./Signup";
 import DashBoard from './DashBoard';
+import Login from './Login';
 
 import { Container } from "react-bootstrap";
 import { AuthProvider } from "../context/AuthContext";
@@ -17,6 +18,7 @@ function App() {
           <Router>
             <Switch>
               <Route exact path="/" component={DashBoard}/>
+              <Route path="/login" component={Login}/>
               <Route path="/signup" component={Signup}/>
             </Switch>
           </Router>
